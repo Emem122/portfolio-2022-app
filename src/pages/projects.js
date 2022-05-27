@@ -15,11 +15,13 @@ const projects = () => {
 			</Head>
 			<div className="container flex h-full flex-col">
 				<PageTitle title="projects" path="/projects" text="Projects" />
-				{/* FIXME: grid content width */}
-				<div className="grid grid-cols-1 gap-3 rounded-normalRound bg-white py-8 px-6 sm:grid-cols-2 lg:grid-cols-3">
+				<div className="flex flex-wrap justify-center gap-y-3 rounded-normalRound bg-clrBgComponent py-8 px-6 sm:justify-between">
 					{projectsData.map((data) => {
 						return (
-							<div key={data.id} className="overflow-hidden rounded-2xl bg-clrWhiteLight">
+							<div
+								key={data.id}
+								className="box-border w-full max-w-xs  overflow-hidden rounded-2xl bg-clrBgLight sm:w-[calc(100%/2-0.5rem)] lg:w-[calc(100%/3-0.5rem)]"
+							>
 								<div className="h-[150px] w-full bg-gray-500">{data.image}</div>
 								<div className="py-2 px-4">
 									<h3 className="mb-1 font-fontSecondary text-xl font-semibold">{data.title}</h3>
@@ -38,7 +40,7 @@ const projects = () => {
 									<Link href={data.url}>
 										<a
 											target="_blank"
-											className="ml-auto flex w-fit items-center justify-end gap-1 text-sm text-clrGray hover:text-clrAccent"
+											className="ml-auto flex w-fit items-center justify-end gap-1 text-sm text-slate-600 hover:text-clrAccent dark:text-slate-400 dark:hover:text-clrAccent"
 										>
 											{data.url}
 											<FiExternalLink />

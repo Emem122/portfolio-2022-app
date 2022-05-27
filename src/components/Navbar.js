@@ -51,9 +51,9 @@ const Navbar = ({ spToggleClose, toggleOpen, open }) => {
 
 	return (
 		<div
-			className={`absolute top-6 mr-1 flex h-[calc(100%-48px)] flex-col gap-3 bg-clrWhite transition-all md:top-0 ${
-				open && "pr-3"
-			} z-10 px-1 md:relative md:h-auto md:px-0`}
+			className={`absolute top-0 mr-1 flex h-full flex-col gap-3 rounded-l-xl pt-3 transition-all md:top-0 ${
+				open && "bg-clrBg pr-3 md:bg-transparent"
+			} z-10 px-1 md:relative md:h-auto md:p-0`}
 		>
 			<div className="ml-2 w-fit cursor-pointer select-none text-3xl" onClick={toggleOpen}>
 				<CgMenuLeft />
@@ -65,8 +65,8 @@ const Navbar = ({ spToggleClose, toggleOpen, open }) => {
 							<Link href={data.path}>
 								<a
 									onClick={spToggleClose}
-									className={`relative flex items-center gap-1 py-1 px-3 font-medium text-clrBlack transition-all duration-300 ${
-										currentPath === data.path && "text-clrWhite"
+									className={`relative flex items-center gap-1 py-1 px-3 font-medium text-clrText transition-all duration-300 dark:text-clrWhiteDark ${
+										currentPath === data.path && "text-clrBg dark:text-clrBg"
 									}`}
 								>
 									{currentPath === data.path ? (
@@ -77,7 +77,7 @@ const Navbar = ({ spToggleClose, toggleOpen, open }) => {
 												position: "absolute",
 												width: "100%",
 												height: "100%",
-												background: "var(--clr-black)",
+												background: "var(--clr-text)",
 												zIndex: -1,
 												left: 0,
 												top: 0,

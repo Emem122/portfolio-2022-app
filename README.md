@@ -1,8 +1,9 @@
-TODO:追加 Dark Theme
 button sample
 https://www.framer.com/docs/examples/#layout-animations
 
 TODO:追加 PROJECTS
+TODO:追加 ABOUT 内容
+TODO:追加 SKILLS 内容
 
 ---
 
@@ -29,12 +30,14 @@ https://blog.maximeheckel.com/posts/framer-motion-layout-animations/
 
 - **Next.js**
 - TailwindCSS
+  - Dark Theme
+    https://zenn.dev/nrikiji/articles/f4c72668277bd8
 - Framer Motion
 
 ### icons
 
 - React Icons
-  - https://www.framer.com/docs/examples/
+  https://react-icons.github.io/react-icons/
 
 ### loading animation
 

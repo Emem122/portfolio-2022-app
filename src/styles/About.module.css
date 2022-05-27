@@ -14,7 +14,7 @@
 	}
 }
 .aboutGridContent {
-	background: white;
+	background: var(--clr-bg-component);
 	border-radius: var(--normalRound);
 	padding: 0.75rem 1rem;
 }

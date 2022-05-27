@@ -54,7 +54,7 @@ const Layout = ({ children }) => {
 
 	return (
 		<div className="bg-gradient h-screen w-full p-1 py-3 md:p-6 xl:px-7">
-			<div className="mx-auto flex h-full max-w-[1280px] rounded-xl bg-clrWhite p-3 pl-0 pr-1 shadow-lg md:p-5">
+			<div className="relative mx-auto flex h-full max-w-[1280px] rounded-xl bg-clrBg p-3 pl-0 pr-1 shadow-lg md:p-5">
 				<Navbar toggleOpen={toggleOpen} spToggleClose={spToggleClose} open={open} />
 				<div className="ml-14 flex w-full flex-col md:ml-0">
 					<Header />

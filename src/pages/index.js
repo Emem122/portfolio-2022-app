@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-// import styles from "@/styles/Home.module.css";
 
 export default function Home() {
 	const line1 = "Welcome to";
@@ -36,6 +35,23 @@ export default function Home() {
 		},
 	};
 
+	const buttonVariants = {
+		hidden: {
+			opacity: 0,
+			scale: 0,
+		},
+		visible: {
+			opacity: 1,
+			scale: 1,
+			y: 0,
+			transition: { delay: 1.8 },
+		},
+		exit: {
+			y: -20,
+			opacity: 0,
+		},
+	};
+
 	return (
 		<>
 			<Head>
@@ -50,12 +66,8 @@ export default function Home() {
 						initial="hidden"
 						animate="visible"
 						exit="exit"
-						className="text-center text-5xl font-black text-clrPrimary md:text-7xl"
+						className="text-center text-4xl font-black text-clrPrimary sm:text-5xl md:text-7xl"
 					>
-						{/* <div>Welcome to</div>
-						<div>
-							<span className="text-clrAccent">EN</span> Portfolio
-						</div> */}
 						{line1.split("").map((character, index) => {
 							return (
 								<motion.span
@@ -83,14 +95,11 @@ export default function Home() {
 					<Link href="/about">
 						<motion.a
 							className="cursor-pointer rounded-full bg-clrSecondary px-10 py-3 text-xl font-bold text-white shadow-sm md:text-3xl"
-							initial={{ opacity: 0, scale: 0 }}
-							animate={{
-								opacity: 1,
-								scale: 1,
-								y: 0,
-								transition: { delay: 1.8 },
-							}}
-							exit={{ y: -20, opacity: 0 }}
+							variants={buttonVariants}
+							initial="hidden"
+							animate="visible"
+							exit="exit"
+							whileHover={{ x: 10 }}
 						>
 							Let&apos;s Get Started !
 						</motion.a>
