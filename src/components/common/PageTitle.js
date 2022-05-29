@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import { MdOutlineNavigateNext } from "react-icons/md";
 
-const PageTitle = ({ title, path, text }) => {
+export const PageTitle = ({ title, path, text }) => {
 	const router = useRouter();
 	const currentPath = router.pathname;
 	const [isButtonHover, setIsButtonHover] = useState(false);
@@ -39,6 +39,7 @@ const PageTitle = ({ title, path, text }) => {
 							onMouseLeave={handleMouseLeave}
 						>
 							{text}
+							{/* next button */}
 							<motion.div
 								className="text-2xl text-white"
 								variants={arrowVariants}
@@ -54,4 +55,4 @@ const PageTitle = ({ title, path, text }) => {
 	);
 };
 
-export default PageTitle;
+// export default PageTitle;

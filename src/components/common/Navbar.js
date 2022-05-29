@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { CgMenuLeft } from "react-icons/cg";
 import { FaLaptopCode, FaHome, FaUserAlt, FaWindowRestore } from "react-icons/fa";
 
-const Navbar = ({ spToggleClose, toggleOpen, open }) => {
+export const Navbar = ({ spToggleClose, toggleOpen, open }) => {
 	const router = useRouter();
 	const currentPath = router.pathname;
 
@@ -15,39 +15,7 @@ const Navbar = ({ spToggleClose, toggleOpen, open }) => {
 		{ name: "skills", path: "/skills", icon: <FaLaptopCode /> },
 		{ name: "projects", path: "/projects", icon: <FaWindowRestore /> },
 	];
-
-	// const [open, setOpen] = useState(true);
-	// const toggleOpen = () => setOpen(!open);
-
-	// const spToggleClose = () => {
-	// 	if (window.matchMedia("(min-width: 768px)").matches) return;
-	// 	setOpen(false);
-	// };
-
-	// // const width = window.innerWidth;
-
-	// useEffect(() => {
-	// 	if (window.innerWidth < 768) setOpen(false);
-
-	// 	// return () => {
-	// 	// 	second
-	// 	// }
-	// }, []);
-
-	// const closeWithClickOutSideMethod = (e) => {
-	// 	console.log("e.target", e.target);
-	// 	console.log("e.currentTarget", e.currentTarget);
-	// 	if (e.target === e.currentTarget) {
-	// 		//メニューの外側をクリックしたときだけメニューを閉じる
-	// 		console.log("メニューの外側をクリックした");
-	// 		setOpen(false);
-	// 	} else {
-	// 		console.log("メニューの内側をクリックした");
-	// 	}
-	// };
-	// // onClick={(e) => {
-	// // 	closeWithClickOutSideMethod(e);
-	// // }}
+	console.log("rendering nav");
 
 	return (
 		<div
@@ -86,18 +54,15 @@ const Navbar = ({ spToggleClose, toggleOpen, open }) => {
 										></motion.div>
 									) : null}
 									<div className="select-none py-1 text-xl">{data.icon}</div>
-									{/* <AnimatePresence exitBeforeEnter> */}
 									{open && (
 										<motion.p
 											initial={{ x: -50, width: 0, opacity: 0 }}
 											animate={{ x: 0, width: "100%", opacity: 1 }}
-											// exit={{ x: -50, width: 0, opacity: 0, transition: { duration: 0.2 } }}
 											className={`inline-block select-none font-fontSecondary text-xl uppercase`}
 										>
 											{data.name}
 										</motion.p>
 									)}
-									{/* </AnimatePresence> */}
 								</a>
 							</Link>
 						</li>
@@ -108,4 +73,4 @@ const Navbar = ({ spToggleClose, toggleOpen, open }) => {
 	);
 };
 
-export default Navbar;
+// export default Navbar;

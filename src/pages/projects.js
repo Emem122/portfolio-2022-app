@@ -1,13 +1,17 @@
 import { motion } from "framer-motion";
 import Head from "next/head";
-import Link from "next/link";
-import { FiExternalLink } from "react-icons/fi";
+// import Link from "next/link";
+// import { FiExternalLink } from "react-icons/fi";
 
-import PageTitle from "@/components/PageTitle";
-import { projectsData } from "@/data/projectsData";
+import { PageTitle } from "@/components/common";
+
+import { ProjectCard } from "@/components/projects";
+// import { projectsData } from "@/data/projectsData";
 import { pageTransitionVariants } from "@/utils/pageTransitionVariants";
 
 const projects = () => {
+	console.log("rendering projects");
+
 	return (
 		<motion.div variants={pageTransitionVariants} initial="hidden" animate="visible" exit="hidden">
 			<Head>
@@ -16,7 +20,8 @@ const projects = () => {
 			<div className="container flex h-full flex-col">
 				<PageTitle title="projects" path="/projects" text="Projects" />
 				<div className="flex flex-wrap justify-center gap-y-3 rounded-normalRound bg-clrBgComponent py-8 px-6 sm:justify-between">
-					{projectsData.map((data) => {
+					<ProjectCard />
+					{/* {projectsData.map((data) => {
 						return (
 							<div
 								key={data.id}
@@ -49,7 +54,7 @@ const projects = () => {
 								</div>
 							</div>
 						);
-					})}
+					})} */}
 				</div>
 			</div>
 		</motion.div>

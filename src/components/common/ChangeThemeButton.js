@@ -3,7 +3,8 @@ import { useTheme } from "next-themes";
 import React, { useState, useEffect } from "react";
 import { BsFillMoonStarsFill, BsSunFill, BsFillSunFill } from "react-icons/bs";
 import { RiSunFill } from "react-icons/ri";
-const ChangeThemeButton = () => {
+
+export const ChangeThemeButton = () => {
 	const { theme, setTheme } = useTheme();
 	const [isDark, setIsDark] = useState(false);
 
@@ -15,17 +16,18 @@ const ChangeThemeButton = () => {
 		if (theme === "dark") {
 			setTheme("light");
 			setIsDark(false);
+		} else {
+			setTheme("dark");
+			setIsDark(true);
 		}
-		setTheme("dark");
-		setIsDark(true);
 	};
 
 	return (
 		<>
 			<div
 				className="toggle-theme relative mr-3 flex w-[52px] cursor-pointer justify-start rounded-full bg-clrBgComponent p-1"
-				// onClick={toggleTheme}
-				onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+				onClick={() => toggleTheme()}
+				// onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
 				data-isdark={isDark}
 			>
 				<BsFillMoonStarsFill className="absolute left-[5px] top-1/2 h-[16px] w-[16px] -translate-y-1/2 fill-amber-500" />
@@ -40,4 +42,4 @@ const ChangeThemeButton = () => {
 	);
 };
 
-export default ChangeThemeButton;
+// export default ChangeThemeButton;

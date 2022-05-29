@@ -1,11 +1,17 @@
 import { motion } from "framer-motion";
 import Head from "next/head";
 
-import PageTitle from "@/components/PageTitle";
-import { skillsData } from "@/data/skillsData";
+import { PageTitle } from "@/components/common";
+
+// import PageTitle from "@/components/common/PageTitle";
+import { SkillsCategory } from "@/components/skills";
+// import { skillsData } from "@/data/skillsData";
+import { skillsWorkData, skillsLearningData } from "@/data/skillsData";
 import { pageTransitionVariants } from "@/utils/pageTransitionVariants";
 
 const skills = () => {
+	console.log("rendering skills");
+
 	return (
 		<motion.div variants={pageTransitionVariants} initial="hidden" animate="visible" exit="hidden">
 			<Head>
@@ -15,7 +21,9 @@ const skills = () => {
 				<PageTitle title="skills" path="/projects" text="Projects" />
 
 				<div className="rounded-normalRound bg-clrBgComponent py-3 px-4 md:py-4 md:px-6">
-					{skillsData.map((data) => {
+					<SkillsCategory data={skillsWorkData} />
+					<SkillsCategory data={skillsLearningData} />
+					{/* {skillsData.map((data) => {
 						return (
 							<div key={data.id} className="mb-5 last-of-type:mb-0">
 								<h3 className="mb-2 text-lg font-bold text-clrPrimary sm:text-2xl md:mb-3">
@@ -49,7 +57,7 @@ const skills = () => {
 								</ul>
 							</div>
 						);
-					})}
+					})} */}
 				</div>
 			</div>
 		</motion.div>

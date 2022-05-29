@@ -1,9 +1,11 @@
 // import Navbar from "./Navbar";
 import { motion } from "framer-motion";
 
-import ChangeThemeButton from "./ChangeThemeButton";
+// import ChangeThemeButton from "./ChangeThemeButton";
 
-const Header = () => {
+import { ChangeThemeButton } from "@/components/common";
+
+export const Header = () => {
 	return (
 		<>
 			<motion.header
@@ -20,4 +22,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+// export default Header;

@@ -1,8 +1,10 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Head from "next/head";
 
-import PageTitle from "@/components/PageTitle";
-import { aboutData } from "@/data/aboutData";
+import { PageTitle } from "@/components/common";
+
+import { AboutCategory } from "@/components/about";
+import { aboutProfileData, aboutSchoolData, aboutWorkData } from "@/data/aboutData";
 import style from "@/styles/About.module.css";
 import { pageTransitionVariants } from "@/utils/pageTransitionVariants";
 
@@ -14,8 +16,12 @@ const about = () => {
 			</Head>
 			<div className="container">
 				<PageTitle title="about me" path="/skills" text="Skills" />
-
 				<div className={style.aboutGrid}>
+					<AboutCategory data={aboutProfileData} />
+					<AboutCategory data={aboutSchoolData} />
+					<AboutCategory data={aboutWorkData} />
+				</div>
+				{/* <div className={style.aboutGrid}>
 					{aboutData.map((data) => {
 						return (
 							<div key={data.id} className={style.aboutGridContent}>
@@ -76,7 +82,7 @@ const about = () => {
 							</div>
 						);
 					})}
-				</div>
+				</div> */}
 			</div>
 		</motion.div>
 	);
