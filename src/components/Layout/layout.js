@@ -60,7 +60,7 @@ export const Layout = ({ children }) => {
 		<div className="bg-gradient h-screen w-full p-1 py-3 md:p-6 xl:px-7">
 			<div className="relative mx-auto flex h-full max-w-[1280px] rounded-xl bg-clrBg p-3 pl-0 pr-1 shadow-lg md:p-5">
 				<Navbar toggleOpen={toggleOpen} spToggleClose={spToggleClose} open={open} />
-				<div className="ml-14 flex w-full flex-col md:ml-0">
+				<div className="flex w-full flex-col pl-12 sm:pl-14 md:pl-0">
 					<Header />
 					<main
 						id="main"

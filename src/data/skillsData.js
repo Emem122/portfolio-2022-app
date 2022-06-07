@@ -67,19 +67,25 @@ export const skillsWorkData = {
 		{
 			name: "HTML",
 			icon: <DiHtml5 />,
-			details: ["how to used", "when I used..."],
+			details: ["SEOを考えた構成を意識", "更新を意識した簡潔なコードを心がけている"],
 			color: "#D84924",
 		},
 		{
-			name: "CSS",
+			name: "SCSS/CSS",
 			icon: <DiCss3 />,
-			details: ["how to used", "when I used..."],
+			details: [
+				"BEMを使用した効率的な記述が可能",
+				"変数などを使用し更新・変更時の効率アップを行う",
+			],
 			color: "#318EE7",
 		},
 		{
 			name: "jQuery",
 			icon: <DiJqueryLogo />,
-			details: ["how to used", "when I used..."],
+			details: [
+				"タブ・アコーディオン・ハンバーガーメニューなど基本的な要素の作成が可能",
+				"レスポンシブでの切り替えなどでも使用",
+			],
 			color: "#2063A3",
 		},
 	],
@@ -93,25 +99,36 @@ export const skillsLearningData = {
 			name: "React",
 			icon: <DiReact />,
 			color: "#5CCFEE",
-			details: ["how to used", "when I used..."],
+			details: [
+				"styled-components・TailwindCSSなどでのスタイリングが可能",
+				"framer-motionでのアニメーションも取り入れている",
+				"bulletproof-reactを参考にディレクトリ構造を模索中",
+			],
 		},
 		{
 			name: "GSAP",
 			icon: <SiGreensock strokeWidth="0.5px" />,
 			color: "#80C301",
-			details: ["how to used", "when I used..."],
+			details: [
+				"主にHTML/CSS/JSで制作をする際に使用",
+				"スクロールで表示させるアニメーションやタイムラインを用いたメインビジュアルのアニメーションなどが可能",
+			],
 		},
 		{
 			name: "Tailwind",
 			icon: <SiTailwindcss />,
 			color: "#38ADC9",
-			details: ["how to used", "when I used..."],
+			details: [
+				"当ポートフォリオのスタイリングで採用",
+				"tailwindを用いたダークモードの設定を行なっている",
+				"configでのカスタマイズが可能",
+			],
 		},
 		{
 			name: "Next.js",
 			icon: <SiNextdotjs />,
 			color: "#000000",
-			details: ["how to used", "when I used..."],
+			details: ["当ポートフォリオにはNext.jsを採用", "公式推奨のCSS modulesやemotionの使用が可能"],
 		},
 	],
 };

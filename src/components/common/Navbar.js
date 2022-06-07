@@ -33,7 +33,7 @@ export const Navbar = ({ spToggleClose, toggleOpen, open }) => {
 							<Link href={data.path}>
 								<a
 									onClick={spToggleClose}
-									className={`relative flex items-center gap-1 py-1 px-3 font-medium text-clrText transition-all duration-300 dark:text-clrWhiteDark ${
+									className={`relative flex items-center gap-1 py-1 px-2 font-medium text-clrText transition-all duration-300 dark:text-clrWhiteDark xs:px-3 ${
 										currentPath === data.path && "text-clrBg dark:text-clrBg"
 									}`}
 								>
@@ -53,7 +53,7 @@ export const Navbar = ({ spToggleClose, toggleOpen, open }) => {
 											layoutId="activeBG"
 										></motion.div>
 									) : null}
-									<div className="select-none py-1 text-xl">{data.icon}</div>
+									<div className="select-none py-1 text-lg xs:text-xl">{data.icon}</div>
 									{open && (
 										<motion.p
 											initial={{ x: -50, width: 0, opacity: 0 }}

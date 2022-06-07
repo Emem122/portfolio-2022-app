@@ -17,7 +17,10 @@ export const SkillsCard = ({ data }) => {
 							<ul>
 								{lang.details.map((detail, index) => {
 									return (
-										<li key={index} className="text-sm text-clrPrimary">
+										<li
+											key={index}
+											className="mb-1 pr-5 pl-[1em] indent-[-1.2em] text-sm text-clrPrimary last-of-type:mb-0"
+										>
 											ー {detail}
 										</li>
 									);

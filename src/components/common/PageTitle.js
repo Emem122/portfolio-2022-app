@@ -30,8 +30,9 @@ export const PageTitle = ({ title, path, text }) => {
 			<h2 className="font-fontSecondary text-3xl font-black uppercase text-clrPrimary md:text-5xl">
 				{title}
 			</h2>
+			{/* next button */}
 			{currentPath !== "/projects" && (
-				<div>
+				<div className="hidden xs:block">
 					<Link href={path}>
 						<motion.a
 							className="flex cursor-pointer items-center rounded-md bg-clrAccent px-3 py-1 pl-4 font-fontSecondary font-bold text-white md:text-xl"
@@ -39,7 +40,6 @@ export const PageTitle = ({ title, path, text }) => {
 							onMouseLeave={handleMouseLeave}
 						>
 							{text}
-							{/* next button */}
 							<motion.div
 								className="text-2xl text-white"
 								variants={arrowVariants}

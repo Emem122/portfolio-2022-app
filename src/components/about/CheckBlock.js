@@ -8,9 +8,14 @@ export const CheckBlock = ({ data }) => {
 				{data.lists.map((list, index) => {
 					return (
 						<div key={index} className="mb-2 last-of-type:mb-0">
+							{list?.listDate && (
+								<p className="font-fontSecondary text-xs font-semibold tracking-wider text-clrAccent">
+									{list.listDate}
+								</p>
+							)}
 							<div className="flex items-start gap-2">
 								<div className="relative mt-1 h-[15px] w-[15px] shrink-0 rounded-sm border-[1px] border-clrText md:h-[20px] md:w-[20px]">
-									{list.checked && (
+									{list?.checked && (
 										<svg
 											className="absolute bottom-[2px] h-[15px] w-[20px] md:h-[19px] md:w-[24px]"
 											viewBox="0 0 24 19"
@@ -28,19 +33,15 @@ export const CheckBlock = ({ data }) => {
 										</svg>
 									)}
 								</div>
-								<div className="flex items-center">
-									<h4 className="md:text-lg">{list.listTitle}</h4>
-									{!list.checked && (
-										<div className="ml-2 h-fit rounded-md bg-clrAccent px-2 text-sm text-white">
-											next goal
-										</div>
-									)}
-								</div>
+								<h4 className="md:text-md mb-1">{list.listTitle}</h4>
 							</div>
 							<ul>
-								{list.listDetail.map((detail, index) => {
+								{list?.listDetail?.map((detail, index) => {
 									return (
-										<li key={index} className="ml-7 flex text-sm leading-relaxed text-clrPrimary">
+										<li
+											key={index}
+											className="mb-1 ml-2 flex text-sm leading-relaxed text-clrPrimary sm:ml-7"
+										>
 											<div className="mr-2 mt-2 h-[5px] w-[5px] shrink-0 rounded-full bg-clrPrimary"></div>
 											<p>{detail}</p>
 										</li>

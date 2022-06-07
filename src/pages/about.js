@@ -16,10 +16,12 @@ const about = () => {
 			</Head>
 			<div className="container">
 				<PageTitle title="about me" path="/skills" text="Skills" />
-				<div className={style.aboutGrid}>
-					<AboutCategory data={aboutProfileData} />
-					<AboutCategory data={aboutSchoolData} />
+				<div className="flex flex-col gap-2 lg:flex-row">
 					<AboutCategory data={aboutWorkData} />
+					<div className="flex flex-col gap-2">
+						<AboutCategory data={aboutProfileData} />
+						<AboutCategory data={aboutSchoolData} />
+					</div>
 				</div>
 				{/* <div className={style.aboutGrid}>
 					{aboutData.map((data) => {

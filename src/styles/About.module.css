@@ -1,18 +1,19 @@
-.aboutGrid {
+/*.aboutGrid {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-}
+}*/
 
 /* mdなら768px */
 @media (min-width: 1024px) {
 	.aboutGrid {
-		display: grid;
+		/*display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 1fr);
-		grid-gap: 1rem;
+		grid-gap: 1rem;*/
 	}
 }
+/*
 .aboutGridContent {
 	background: var(--clr-bg-component);
 	border-radius: var(--normalRound);
@@ -22,7 +23,8 @@
 	.aboutGridContent {
 		padding: 1rem 1.5rem;
 	}
-}
+}*/
+/*
 .aboutGridContent:first-of-type {
 	grid-area: 1 / 1 / 2 / 2;
 }
@@ -32,3 +34,4 @@
 .aboutGridContent:last-of-type {
 	grid-area: 1 / 2 / 3 / 3;
 }
+*/
