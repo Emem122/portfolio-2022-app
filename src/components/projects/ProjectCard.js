@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
@@ -22,7 +22,7 @@ export const ProjectCard = () => {
 										サイトを見る
 									</div>
 									<div className="relative h-[150px] w-full">
-										<Image
+										<ExportedImage
 											src={`/images/${data.image}.png`}
 											layout="fill"
 											objectFit="cover"
