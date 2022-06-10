@@ -1,7 +1,5 @@
 import React from "react";
 
-import style from "@/styles/About.module.css";
-
 import { CheckBlock } from "./CheckBlock";
 
 export const AboutCategory = ({ data }) => {
