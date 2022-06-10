@@ -36,14 +36,8 @@ export const ProjectCard = () => {
 								<ul className="mb-2 flex flex-wrap gap-1">
 									{data.tags.map((tag, index) => {
 										return (
-											// <li key={index} className="flex items-center text-clrPrimary">
-											// 	<p className="text-medium whitespace-nowrap text-sm">{tag}</p>
-											// 	{tag !== data.tags[data.tags.length - 1] && (
-											// 		<span className="px-1 text-xs text-clrGray">/</span>
-											// 	)}
-											// </li>
 											<li key={index} className="flex items-center text-clrPrimary">
-												<p className="text-medium whitespace-nowrap rounded-md bg-clrWhiteDark px-2 text-sm">
+												<p className="text-medium whitespace-nowrap rounded-md bg-zinc-200 px-2 text-sm dark:bg-zinc-800">
 													{tag}
 												</p>
 											</li>

@@ -1,7 +1,6 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
 import { CgMenuLeft } from "react-icons/cg";
 import { FaLaptopCode, FaHome, FaUserAlt, FaWindowRestore } from "react-icons/fa";
 
@@ -72,5 +71,3 @@ export const Navbar = ({ spToggleClose, toggleOpen, open }) => {
 		</div>
 	);
 };
-
-// export default Navbar;
