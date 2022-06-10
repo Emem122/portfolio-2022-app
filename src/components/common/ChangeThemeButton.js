@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import React, { useState, useEffect } from "react";
-import { BsFillMoonStarsFill, BsSunFill, BsFillSunFill } from "react-icons/bs";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 import { RiSunFill } from "react-icons/ri";
 
 export const ChangeThemeButton = () => {
@@ -27,7 +27,6 @@ export const ChangeThemeButton = () => {
 			<div
 				className="toggle-theme relative mr-3 flex w-[52px] cursor-pointer justify-start rounded-full bg-clrBgComponent p-1"
 				onClick={() => toggleTheme()}
-				// onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
 				data-isdark={isDark}
 			>
 				<BsFillMoonStarsFill className="absolute left-[5px] top-1/2 h-[16px] w-[16px] -translate-y-1/2 fill-amber-500" />
@@ -41,5 +40,3 @@ export const ChangeThemeButton = () => {
 		</>
 	);
 };
-
-// export default ChangeThemeButton;

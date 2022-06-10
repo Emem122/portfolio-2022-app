@@ -11,14 +11,6 @@ export const projectsData = [
 	},
 	{
 		id: uuidv4(),
-		title: "Portfolio -last version",
-		tags: ["React", "styled-component", "Framer Motion"],
-		url: "https://en-portfolio.pages.dev",
-		image: "thumb_portfolio_old",
-		github: "https://github.com",
-	},
-	{
-		id: uuidv4(),
 		title: "Correcta -LP",
 		tags: ["HTML", "SCSS", "jQuery", "GSAP"],
 		url: "https://correcta.pages.dev",
@@ -35,6 +27,14 @@ export const projectsData = [
 	},
 	{
 		id: uuidv4(),
+		title: "Portfolio -last version",
+		tags: ["React", "styled-component", "Framer Motion"],
+		url: "https://en-portfolio.pages.dev",
+		image: "thumb_portfolio_old",
+		github: "https://github.com",
+	},
+	{
+		id: uuidv4(),
 		title: "Earth -Jewelry Site",
 		tags: ["HTML", "SCSS", "jQuery", "GSAP"],
 		url: "https://earth-jewelry.pages.dev",
@@ -45,7 +45,7 @@ export const projectsData = [
 		id: uuidv4(),
 		title: "Todo App",
 		tags: ["HTML", "tailwindCSS", "JS"],
-		url: "https://todo-app.pages.dev",
+		url: "https://en-todoapp.pages.dev",
 		image: "thumb_todoapp",
 		github: "https://github.com",
 	},
