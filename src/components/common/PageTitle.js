@@ -54,5 +54,3 @@ export const PageTitle = ({ title, path, text }) => {
 		</div>
 	);
 };
-
-// export default PageTitle;

@@ -1,7 +1,4 @@
-// import Navbar from "./Navbar";
 import { motion } from "framer-motion";
-
-// import ChangeThemeButton from "./ChangeThemeButton";
 
 import { ChangeThemeButton } from "@/components/common";
 
@@ -21,5 +18,3 @@ export const Header = () => {
 		</>
 	);
 };
-
-// export default Header;

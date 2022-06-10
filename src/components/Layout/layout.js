@@ -1,7 +1,6 @@
-// import { AnimatePresence } from "framer-motion";
 import { Router, useRouter } from "next/router";
 import NProgress from "nprogress";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 import { Navbar, Header } from "@/components/common";
 
@@ -22,39 +21,6 @@ export const Layout = ({ children }) => {
 	Router.events.on("routeChangeComplete", () => NProgress.done());
 	Router.events.on("routeChangeError", () => NProgress.done());
 	NProgress.configure({ parent: "#main" });
-
-	// navigation
-	// const [open, setOpen] = useState(true);
-
-	// const toggleOpen = () => setOpen(!open);
-
-	// const spToggleClose = () => {
-	// 	if (window.matchMedia("(min-width: 768px)").matches) return;
-	// 	setOpen(false);
-	// };
-
-	// const closeWithClickOutSideMethod = () => {
-	// 	if (window.matchMedia("(min-width: 768px)").matches) {
-	// 		return;
-	// 	} else {
-	// 		setOpen(false);
-	// 	}
-	// };
-
-	// useEffect(() => {
-	// 	if (typeof window !== "undefined") {
-	// 		const handleResize = () => {
-	// 			if (window.matchMedia("(min-width: 768px)").matches) return;
-	// 			setOpen(false);
-	// 		};
-
-	// 		window.addEventListener("resize", handleResize);
-	// 		handleResize();
-	// 		return () => window.removeEventListener("resize", handleResize);
-	// 	} else {
-	// 		return;
-	// 	}
-	// }, []);
 
 	return (
 		<div className="bg-gradient h-screen w-full p-1 py-3 md:p-6 xl:px-7">
