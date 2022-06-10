@@ -29,7 +29,7 @@ export const projectsData = [
 		id: uuidv4(),
 		title: "Portfolio -last version",
 		tags: ["React", "styled-component", "Framer Motion"],
-		url: "https://en-portfolio.pages.dev",
+		url: "https://en-portfolio-react.pages.dev",
 		image: "thumb_portfolio_old",
 		github: "https://github.com",
 	},
