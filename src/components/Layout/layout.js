@@ -23,8 +23,8 @@ export const Layout = ({ children }) => {
 	NProgress.configure({ parent: "#main" });
 
 	return (
-		<div className="bg-gradient h-screen w-full p-1 py-3 md:p-6 xl:px-7">
-			<div className="relative mx-auto flex h-full max-w-[1280px] rounded-xl bg-clrBg p-3 pl-0 pr-1 shadow-lg md:p-5">
+		<div className="bg-gradient flex h-screen w-full items-center p-1 py-3 md:p-6 xl:px-7">
+			<div className="relative mx-auto flex h-full max-h-[800px] max-w-[1280px] rounded-xl bg-clrBg p-3 pl-0 pr-1 shadow-lg md:p-5">
 				<Navbar toggleOpen={toggleOpen} spToggleClose={spToggleClose} open={open} />
 				<div className="flex w-full flex-col pl-12 sm:pl-14 md:pl-0">
 					<Header />
