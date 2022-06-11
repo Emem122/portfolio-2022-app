@@ -33,7 +33,7 @@ export const CheckBlock = ({ data }) => {
 										</svg>
 									)}
 								</div>
-								<h4 className="mb-1 text-sm md:text-lg">{list.listTitle}</h4>
+								<h4 className="mb-1 text-sm md:text-base">{list.listTitle}</h4>
 							</div>
 							<ul>
 								{list?.listDetail?.map((detail, index) => {
