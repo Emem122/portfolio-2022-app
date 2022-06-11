@@ -19,7 +19,7 @@ export const SkillsCard = ({ data }) => {
 									return (
 										<li
 											key={index}
-											className="mb-1 pr-5 pl-[1em] indent-[-1.2em] text-sm text-clrPrimary last-of-type:mb-0"
+											className="mb-1 pr-5 pl-[1em] indent-[-1.2em] text-xs text-clrPrimary last-of-type:mb-0 md:text-sm"
 										>
 											ー {detail}
 										</li>

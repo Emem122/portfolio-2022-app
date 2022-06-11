@@ -28,12 +28,12 @@ export const CheckBlock = ({ data }) => {
 												strokeWidth="3"
 												initial={{ opacity: 0, pathLength: 0 }}
 												animate={{ opacity: 1, pathLength: 1 }}
-												transition={{ duration: 0.5, delay: 0.8 * index }}
+												transition={{ duration: 0.4, delay: 0.5 * index }}
 											/>
 										</svg>
 									)}
 								</div>
-								<h4 className="md:text-md mb-1">{list.listTitle}</h4>
+								<h4 className="mb-1 text-sm md:text-lg">{list.listTitle}</h4>
 							</div>
 							<ul>
 								{list?.listDetail?.map((detail, index) => {
@@ -43,7 +43,7 @@ export const CheckBlock = ({ data }) => {
 											className="mb-1 ml-2 flex text-sm leading-relaxed text-clrPrimary sm:ml-7"
 										>
 											<div className="mr-2 mt-2 h-[5px] w-[5px] shrink-0 rounded-full bg-clrPrimary"></div>
-											<p>{detail}</p>
+											<p className="text-xs md:text-sm">{detail}</p>
 										</li>
 									);
 								})}
