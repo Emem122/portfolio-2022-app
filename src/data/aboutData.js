@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 export const aboutProfileData = {
 	id: uuidv4(),
 	title: "プロフィール",
-	img: " ",
+	img: "profile_pic",
 	lists: [
 		{
 			checked: true,
