@@ -35,7 +35,7 @@ export const PageTitle = ({ title, path, text }) => {
 				<div className="hidden xs:block">
 					<Link href={path}>
 						<motion.a
-							className="flex cursor-pointer items-center rounded-md bg-clrAccent px-3 py-1 pl-4 font-fontSecondary font-bold text-white md:text-xl"
+							className="flex cursor-pointer items-center rounded-md bg-clrAccent px-3 py-1 pl-4 font-fontSecondary font-bold text-white shadow-md md:text-xl"
 							onMouseOver={handleMouseOver}
 							onMouseLeave={handleMouseLeave}
 						>

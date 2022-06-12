@@ -19,6 +19,14 @@ export const projectsData = [
 	},
 	{
 		id: uuidv4(),
+		title: "Todo App",
+		tags: ["HTML", "tailwindCSS", "JS"],
+		url: "https://en-todoapp.pages.dev",
+		image: "thumb_todoapp",
+		github: "https://github.com",
+	},
+	{
+		id: uuidv4(),
 		title: "cocon -Hotel Site",
 		tags: ["HTML", "SCSS", "jQuery"],
 		url: "https://cocon.pages.dev",
@@ -39,14 +47,6 @@ export const projectsData = [
 		tags: ["HTML", "SCSS", "jQuery", "GSAP"],
 		url: "https://earth-jewelry.pages.dev",
 		image: "thumb_earth",
-		github: "https://github.com",
-	},
-	{
-		id: uuidv4(),
-		title: "Todo App",
-		tags: ["HTML", "tailwindCSS", "JS"],
-		url: "https://en-todoapp.pages.dev",
-		image: "thumb_todoapp",
 		github: "https://github.com",
 	},
 ];

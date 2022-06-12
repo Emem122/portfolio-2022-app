@@ -4,6 +4,7 @@ import Head from "next/head";
 import { PageTitle } from "@/components/common";
 
 import { AboutCategory } from "@/components/about";
+import { SpBottomNextButton } from "@/components/common/SpBottomNextButton";
 import { aboutProfileData, aboutSchoolData, aboutWorkData } from "@/data/aboutData";
 import { pageTransitionVariants } from "@/utils/pageTransitionVariants";
 
@@ -22,6 +23,7 @@ const about = () => {
 						<AboutCategory data={aboutSchoolData} />
 					</div>
 				</div>
+				<SpBottomNextButton path="/skills" text="Go to Skills" />
 			</div>
 		</motion.div>
 	);

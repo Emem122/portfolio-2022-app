@@ -7,7 +7,7 @@ export const SkillsCard = ({ data }) => {
 				return (
 					<li
 						key={index}
-						className="flex w-full items-start gap-2 rounded-lg bg-clrBgLight p-2 lg:w-[calc(50%-1rem)]"
+						className="flex w-full items-start gap-2 rounded-lg bg-clrBgLight p-2 shadow-sm lg:w-[calc(50%-1rem)]"
 					>
 						<div className="mt-1 text-3xl" style={{ color: lang.color }}>
 							{lang.icon}
