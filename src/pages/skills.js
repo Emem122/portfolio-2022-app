@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import { PageTitle } from "@/components/common";
 
+import { SpBottomNextButton } from "@/components/common/SpBottomNextButton";
 import { SkillsCategory } from "@/components/skills";
 import { skillsWorkData, skillsLearningData } from "@/data/skillsData";
 import { pageTransitionVariants } from "@/utils/pageTransitionVariants";
@@ -22,6 +23,7 @@ const skills = () => {
 					<SkillsCategory data={skillsWorkData} />
 					<SkillsCategory data={skillsLearningData} />
 				</div>
+				<SpBottomNextButton path="/projects" text="Go to Projects" />
 			</div>
 		</motion.div>
 	);
