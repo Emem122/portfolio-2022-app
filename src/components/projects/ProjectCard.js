@@ -57,20 +57,22 @@ export const ProjectCard = () => {
 								</ul>
 
 								<div className="mt-auto flex w-full items-center justify-between pt-2">
-									<Link href={data.github}>
-										<a
-											target="_blank"
-											className="flex w-fit items-center justify-end gap-1 text-sm text-gray-400 hover:text-clrAccent dark:text-slate-400 dark:hover:text-clrAccent"
-										>
-											<AiFillGithub />
-											<span>github</span>
-										</a>
-									</Link>
+									{data.github && (
+										<Link href={data.github}>
+											<a
+												target="_blank"
+												className="flex w-fit items-center justify-end gap-1 text-sm text-gray-400 hover:text-clrAccent dark:text-slate-400 dark:hover:text-clrAccent"
+											>
+												<AiFillGithub />
+												<span>github</span>
+											</a>
+										</Link>
+									)}
 									{data.url !== "https://en-portfolio.pages.dev" && (
 										<Link href={data.url}>
 											<a
 												target="_blank"
-												className="flex w-fit items-center justify-end gap-1 text-sm text-gray-400 transition-colors hover:text-clrAccent"
+												className="ml-auto flex w-fit items-center justify-end gap-1 text-sm text-gray-400 transition-colors hover:text-clrAccent"
 											>
 												<span>go to site</span>
 												<FiExternalLink />
