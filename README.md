@@ -2,6 +2,8 @@ button sample
 
 # EN - PORTFOLIO APP 2022
 
+https://en-portfolio.pages.dev
+
 ## Duration
 
 ### DESIGN
@@ -18,8 +20,9 @@ button sample
 
 ### main using
 
-- **Next.js**
+- Next.js
 - TailwindCSS
+  - Styling
   - Dark Theme
 - Framer Motion
 
